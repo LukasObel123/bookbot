@@ -1,8 +1,16 @@
 from stats import get_word_count
 from stats import get_char_dict
 from stats import get_sorted_dictionary
+import sys
 
-filepath = "books/frankenstein.txt"
+if len(sys.argv) < 2:
+    print("Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
+
+
+
+filepath = sys.argv[1]
+#filepath = "books/frankenstein.txt"
 
 def get_book_text(filepath):
     with open(filepath) as f:
