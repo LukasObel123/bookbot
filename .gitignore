@@ -1,3 +1,4 @@
 #Ignoring Books
-./vscode
+/.vscode
 /books
+__pycache__/
